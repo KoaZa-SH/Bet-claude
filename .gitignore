@@ -1,0 +1,20 @@
+## .NET build output
+bin/
+obj/
+publish/
+*.user
+*.suo
+.vs/
+.idea/
+*.log
+TestResults/
+
+## Local data (never commit databases, secrets or keys)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.bin
+secrets/
+appsettings.Local.json
+.env
