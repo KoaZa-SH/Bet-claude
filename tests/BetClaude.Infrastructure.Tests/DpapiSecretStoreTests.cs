@@ -1,7 +1,9 @@
+using System.Runtime.Versioning;
 using BetClaude.Infrastructure.Security;
 
 namespace BetClaude.Infrastructure.Tests;
 
+[SupportedOSPlatform("windows")]
 public sealed class DpapiSecretStoreTests : IDisposable
 {
     private readonly string _dir = Path.Combine(Path.GetTempPath(), $"betclaude-secrets-{Guid.NewGuid():N}");

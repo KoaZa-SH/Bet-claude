@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.Net.Http;
 using BetClaude.App.Localization;
 using BetClaude.Domain;
 using BetClaude.Infrastructure.Providers;
