@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- Namespace is BetClaude.Services (not BetClaude.Application) so it never collides with System.Windows.Application. -->
+    <RootNamespace>BetClaude.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetClaude.Domain\BetClaude.Domain.csproj" />
+    <ProjectReference Include="..\BetClaude.Prediction\BetClaude.Prediction.csproj" />
+  </ItemGroup>
+
+</Project>
