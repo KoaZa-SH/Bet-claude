@@ -1,6 +1,11 @@
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.IO;
+using System.Linq;
 using System.Net.Http;
+using System.Threading.Tasks;
 using BetClaude.App.Localization;
 using BetClaude.Domain;
 using BetClaude.Infrastructure.Providers;

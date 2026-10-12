@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace BetClaude.App.Localization;
 
 /// <summary>All user-visible text lives here, keyed by language. Nothing else in the app hard-codes UI text.</summary>
