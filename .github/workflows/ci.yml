@@ -26,3 +26,11 @@ jobs:
 
       - name: Test
         run: dotnet test BetClaude.sln -c Release --no-build --logger "console;verbosity=normal"
+
+      - name: Publish (win-x64, needs the .NET 8 Desktop Runtime on the PC)
+        run: dotnet publish src/BetClaude.App/BetClaude.App.csproj -c Release -r win-x64 --self-contained false -o publish
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BetClaude-win-x64
+          path: publish

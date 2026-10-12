@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>BetClaude</AssemblyName>
+    <RootNamespace>BetClaude.App</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetClaude.Domain\BetClaude.Domain.csproj" />
+    <ProjectReference Include="..\BetClaude.Prediction\BetClaude.Prediction.csproj" />
+    <ProjectReference Include="..\BetClaude.Application\BetClaude.Application.csproj" />
+    <ProjectReference Include="..\BetClaude.Infrastructure\BetClaude.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

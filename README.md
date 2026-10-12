@@ -24,10 +24,19 @@ for common markets. It is an analysis tool: it does not promise profit, guarante
 ```
 src/BetClaude.Domain          core types, independent of everything else
 src/BetClaude.Prediction      score matrix, goal model fitting, markets, walk-forward backtest
+src/BetClaude.Application     services and interfaces (namespace BetClaude.Services)
+src/BetClaude.Infrastructure  SQLite storage, football-data.co.uk provider, RSS news, DPAPI secret store
+src/BetClaude.App             WPF desktop app (Persian/English, RTL/LTR, light/dark theme)
 tests/                        xUnit tests
 ```
 
-More projects (Services, Infrastructure, Desktop) are added in later commits.
+## Running the app
+
+CI publishes a `win-x64` build as the **BetClaude-win-x64** artifact of each run (GitHub → Actions → a run → Artifacts).
+It needs the **.NET 8 Desktop Runtime** installed. In the app: *Data Collection* → import a league and season
+(for example `E0`, `2425`), then *Matches* → load upcoming matches → pick one.
+
+The data folder is `%LOCALAPPDATA%\BetClaude`. The UI has not been visually reviewed on a real Windows screen yet.
 
 ## Build
 
